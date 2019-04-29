@@ -1,0 +1,13 @@
+@import '../../style/variables';
+
+.home-view-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+  button {
+    @extend .action-btn;
+    margin: 1rem 0;
+  }
+}

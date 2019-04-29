@@ -1,0 +1,49 @@
+@import './variables';
+@import './_include-media';
+
+body, html {
+  font-size: $font-size;
+  background-color: $bgColor;
+  margin: 0;
+  color: $bodyFont;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+p, h1, h2, h3, h4 {
+  margin: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  &:hover {
+    color: red;
+  }
+  &:active {
+    color: green;
+  }
+}
+
+h1, h2, h3 {
+  color: $titleColor;
+  @include media ('<tablet') {
+    text-align: center;
+  }
+}
+
+#root, .app, .root-container {
+  width: 100%;
+  height: 100%;
+}
+
+.root-children {
+  max-width: $desktop;
+  margin: 0 auto;
+}
+

@@ -1,0 +1,12 @@
+@import '../../style/variables';
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: $footerSize;
+  width: 100%;
+  border-top: 1px solid $borderGrey;
+  position: fixed;
+  bottom: 0;
+}

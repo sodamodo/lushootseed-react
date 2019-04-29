@@ -1,0 +1,8 @@
+version: '3'
+services:
+  reactapp:
+    image: animallabs/fe-builder
+    user: root
+    volumes:
+      - ./app:/app
+    command: bash -c "npm run deploy:production"

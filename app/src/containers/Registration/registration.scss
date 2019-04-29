@@ -1,0 +1,55 @@
+@import '../../style/variables';
+
+
+.Registration {
+    // padding-left: auto;
+    // padding-right: auto;
+    // border: 1px solid red;
+    // margin: 20rem auto 0 auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 3rem auto 0 auto;
+    @media screen and (min-width: $tablet) {
+        margin: 1rem auto 0 auto;
+    }
+}
+
+.Registration-header {
+    align-self: center;
+    // border: 1px solid yellow;
+    // padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.Registration-email {
+    border: 1px solid green;
+
+    flex-direction: row;
+}
+
+.Registration-field-title {
+    border: 1px solid blue;
+    // flex: 1;
+}
+
+
+.Registration-input-field {
+    // border: 1px solid orange;
+    padding-bottom: .5rem;
+}
+
+.Registration-fields-container {
+    // border: 2px solid green;
+    margin: 0 auto 0 auto;
+}
+
+.Registration-messages {
+    align-self: center;
+
+}
+
+.Registration-success {
+    align-self: center;
+}

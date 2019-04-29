@@ -1,0 +1,10 @@
+version: '3'
+services:
+  reactapp:
+    build: ./app
+    volumes:
+      - ./app:/app
+      - /app/node_modules
+    command: sh /app/start.sh
+    ports:
+      - "3000:3000"
